@@ -1,0 +1,37 @@
+And check out the following files:
+  - .\tests\example.spec.js - Example end-to-end test
+  - .\tests-examples\demo-todo-app.spec.js - Demo Todo App end-to-end tests
+  - .\playwright.config.js - Playwright Test configuration
+
+Visit https://playwright.dev/docs/intro for more information. ✨
+
+Test only in one file and one website
+  npx playwright test basePage.spec.js --projet=chromium
+
+Headed mode true
+  npx playwright test basePage.spec.js --projet=chromium --headed
+  
+Debug in heaed mode
+  npx playwright test basePage.spec.js --project=chromium --headed --debug
+
+Start on terminal 
+npx playwright codegen
+
+helper
+npx playwright codegen --help
+
+RECORD and save to new file test
+
+npx playwright codegen --output tests/fileName.spec.js
+npx playwright codegen --o tests/fileName.spec.js
+
+Pick locator in the window help to find element
+click on it, and mouse over and click
+
+simulate on IOS
+
+npx playwright codegen --device "iPhone 13"
+see other options by entering just the name like "iPhone"
+
+// wait time
+await page.waitForTimeout(5000)
