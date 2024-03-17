@@ -12,8 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 18.x]
-      container: 
+        node-version: [ 18.x] 
         env: password: ${{secrets.PASSWORD}}
 
     steps:
