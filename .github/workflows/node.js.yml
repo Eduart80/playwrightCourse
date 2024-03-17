@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x]
+      
 
     steps:
     - uses: actions/checkout@v3
@@ -23,7 +24,7 @@ jobs:
         cache: 'npm'
     - name: Run test
       run: | 
-      | echo "Start shop app"
-      | ./shopping-store-linux-amd64 &
+       echo "Start shop app"
+       ./shopping-store-linux-amd64 &
     - run: npm ci
-    - run: npm test
+    - run: npm run test:ci
