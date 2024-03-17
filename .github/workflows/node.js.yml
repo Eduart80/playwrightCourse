@@ -13,7 +13,8 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x]
-      
+      container: 
+        env: password: ${{secrets.PASSWORD}}
 
     steps:
     - uses: actions/checkout@v3
