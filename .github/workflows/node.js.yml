@@ -10,7 +10,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env: password: ${{secrets.PASSWORD}}
+    env: 
+      PASSWORD: ${{ secrets.PASSWORD }}
     strategy:
       matrix:
         node-version: [ 18.x] 
