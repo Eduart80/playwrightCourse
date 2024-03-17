@@ -14,7 +14,7 @@ test('get user token', async ({page}) => {
     const token = await getToken()
     expect(token).toBeTruthy
 });
-test.only('Mock network test, Get call', async ({page}) => {
+test('Mock network test, Get call', async ({page}) => {
     const token = await getToken()
     await page.route('**/api/user**', async (route, request)=>{
        await route.fulfill({
