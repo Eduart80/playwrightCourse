@@ -12,7 +12,7 @@ export class MyAccount{
 
 
     visit = async ()=>{
-        await this.page.goto('http://localhost:2221/login?redirect=/my-account')
+        await this.page.goto('http://localhost:2221/my-account') 
     }
 
     inputEmail = async (email)=>{
