@@ -15,6 +15,7 @@
     "@playwright/test": "^1.42.1"
   },
   "dependencies": {
+    "node-fetch": "^2.6.7",
     "uuid": "^9.0.0"
   }
 }

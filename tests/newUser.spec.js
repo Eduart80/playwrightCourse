@@ -2,7 +2,7 @@ import { test } from "@playwright/test";
 import {v4 as uuid4} from "uuid";
 import { ProductPage } from "../Page_Object/ProductPage"
 
-test.only("New user register", async ({ page }) => {
+test("New user register", async ({ page }) => {
   const productPage = new ProductPage(page);
   const emailRandom = uuid4()
 
